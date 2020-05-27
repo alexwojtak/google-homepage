@@ -6,26 +6,37 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-color: #f2f2f2;
+    background-color: #FFFFFF;
 }
-li a {
+li {
     display: inline;
     color: #000000;
-    padding: 8px 16px;
     text-decoration: none;
+    margin:21px 4px;
+    padding: 20px 16px;
 }
+a {
+     color: inherit; 
+     text-decoration: none;
+} 
 
 .container{
     position:relative;
+    overflow: hidden;
 }
 .header{
     position: fixed;
+    margin-top: 16px;
     top: 0;
 }
 .footer{
     position: fixed;
+    float: left;
+    width: 100%;
     bottom: 0;
+    font-size: small;
+    font-family: arial, serif;
+    padding: 16px;
 }
 .boxes{
     display: float;
@@ -44,10 +55,22 @@ li a {
 
 }
 .moveleft{
-    text-align: left;
+    float: left;
 }
 .moveright{
-    text-align: right;
+    float: right;
+}
+.toplinks{
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+.footerleft{
+    float: left;
+    margin: 16px;
+}
+.footerright{
+    float: right;
+    margin: 16px;
 }
 #hplogo{
     display: block;

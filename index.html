@@ -2,99 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Google</title>
-        <style>
-            @keyframes example {
-                from {transform: scale(0.77);}
-                to {transform: scale(1);}
-            }
-            .container{
-                position:relative;
-            }
-            .header{
-                position: fixed;
-                top: 0;
-            }
-            .footer{
-                position: fixed;
-                bottom: 0;
-            }
-            .boxes{
-                display: float;
-                min-width: 54px;
-                text-align: center;
-                height: 36px;
-                margin:11px 4px;
-                padding: 0 16px;
-                line-height: 27px;
-                background-color: #f2f2f2;
-                border: 1px solid #f2f2f2;
-                border-radius: 4px;
-                color: #5F6368;
-                font-family: arial, sans-serif;
-                font-size: 14px;
-
-            }
-            .moveleft{
-                text-align: left;
-            }
-            .moveright{
-                text-align: right;
-            }
-            #hplogo{
-                display: block;
-                width: 500px;
-                height: 200px;
-                margin:0  auto;
-            }
-            #initialsprite{
-                position: absolute;
-                display:block;
-                margin:0 auto;
-                top: 10px;
-                left: 610px;
-                margin-left: auto;
-                margin-right: auto;
-                object-fit: none;
-                z-index: 2;
-                width: 102px;
-                height: 164px;
-                object-position: -510px -10px;
-                animation-name: example;
-                animation-iteration-count: infinite;
-                animation-timing-function: ease-in-out;
-                animation-direction: alternate;
-                animation-duration: .5s;
-            }
-            #searchcontainer{
-                display: block;
-                background-color: transparent;
-                width: 50%;
-                height: 34px;
-                margin:0 auto;
-                border-radius: 24px;
-                box-shadow: none;
-                border: 1px solid #DFE1E5;
-            }
-            #searchbar{
-                display: inline;
-                background-color: transparent;
-                border: none;
-            }
-        </style>
     </head>
     <body>
         <div class="container">
             
             <div class="header">
-            About Store Gmail Images
+                <ul>
+                    <li><a class="toplinks" href=#>About</a></li>
+                    <li><a class="toplinks" href=#>Store</a></li>
+                    <li><a class="toplinks" href=#>Gmail</a></li>
+                    <li><a class="toplinks" href=#>Images</a></li>
+                </ul>
             </div>
 
             <img id="hplogo" src="cta.png">
             <img id="initialsprite" src="initial-sprite.png">
             <div id="searchcontainer">
                 <form class="container">
-                    <svg width="35" height="35">
+                    <svg id="loupe" width="35" height="35">
                         <circle cx="50%" cy="50%" r="20%" stroke="#5F6368" stroke-width="3" fill="#FFFFFF"></circle>
                         <line x1="64%" y1="64%" x2="90%" y2="90%" stroke="#5F6368" stroke-width="3"></line>
                         <line x1="74%" y1="74%" x2="90%" y2="90%" stroke="#5F6368" stroke-width="5"></line>                
@@ -108,8 +35,16 @@
                 <input value="I'm feeling lucky" class="boxes">
             </center>
             <div class="footer">
-                <span class="moveleft">Advertising Business How Search works</span>
-                <span class="moveright">Privacy Terms Settings</span>
+                <span>
+                    <ul>
+                        <li><a class="footerleft" href=#>Advertising</a></li>
+                        <li><a class="footerleft" href=#>Business</a></li>
+                        <li><a class="footerleft" href=#>How Search Works</a></li>
+                        <li><a class="footerright" href=#>Privacy</a></li>
+                        <li><a class="footerright" href=#>Terms</a></li>
+                        <li><a class="footerright" href=#>Settings</a></li>
+                    </ul>
+                </span>
             </div>
         </div>
     </body>
