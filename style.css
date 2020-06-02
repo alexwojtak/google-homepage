@@ -2,6 +2,9 @@
     from {transform: scale(0.77);}
     to {transform: scale(1);}
 }
+body{
+    margin: 0;
+}
 ul{
     list-style-type: none;
     margin: 0;
@@ -25,9 +28,7 @@ a {
     overflow: hidden;
 }
 .header{
-    position: fixed;
-    margin-top: 16px;
-    top: 0;
+
 }
 .footer{
     position: fixed;
@@ -60,7 +61,18 @@ a {
 .moveright{
     float: right;
 }
-.toplinks{
+.topleftlinks{
+    position: fixed;
+    margin-top: 16px;
+    top: 0;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+}
+.toprightlinks{
+    position: fixed;
+    margin-top: 16px;
+    top: 0;
+    right: 0;
     font-family: arial, sans-serif;
     font-size: 13px;
 }
@@ -82,7 +94,7 @@ a {
     position: absolute;
     display:block;
     margin:0 auto;
-    top: 10px;
+    top: 30px;
     left: 610px;
     margin-left: auto;
     margin-right: auto;
@@ -111,6 +123,9 @@ a {
     display: inline;
     background-color: transparent;
     border: none;
+}
+#mainsearchbarcontainer{
+    height: 34px;
 }
 #loupe{
     position: absolute;
